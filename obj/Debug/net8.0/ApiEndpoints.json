@@ -1,0 +1,108 @@
+[
+  {
+    "ContainingType": "PruebaFina.Controllers.BilleteraController",
+    "Method": "GetSaldos",
+    "RelativePath": "api/Billetera/saldos/{usuarioId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuarioId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PruebaFina.Controllers.BilleteraController",
+    "Method": "TransferirPesos",
+    "RelativePath": "api/Billetera/transferir",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "PruebaFina.Controllers.TransferenciaPesosDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "trabajoFinal.Controllers.PreciosCriptoController",
+    "Method": "GetPreciosCripto",
+    "RelativePath": "api/PreciosCripto/precios",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PruebaFina.Controllers.RegistroController",
+    "Method": "Login",
+    "RelativePath": "api/Registro/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "trabajoFinal.Models.LoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PruebaFina.Controllers.RegistroController",
+    "Method": "Register",
+    "RelativePath": "api/Registro/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "trabajoFinal.Models.RegisterDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PruebaFina.Controllers.TransaccionController",
+    "Method": "GetHistorial",
+    "RelativePath": "api/Transaccion/Historial",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuarioid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PruebaFina.Controllers.TransaccionController",
+    "Method": "PostTransaccion",
+    "RelativePath": "api/Transaccion/Transaccion",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "PruebaFina.Models.TransaccionDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
