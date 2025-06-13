@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compra/Venta de Criptomonedas</title>
+  <link rel="stylesheet" href="transaccionStyle.css">
+</head>
+<body>
+      <nav class="navbar-custom">
+  <a class="navbar-brand" href="#">Cripto Market</a>
+  <div class="navbar-links">
+    <button onclick="window.location.href='indexHome.html'">Home</button>
+    <button onclick="window.location.href='indexTransaccion.html'">Transacciones</button>
+    <button onclick="window.location.href='indexTransferirPesos.html'">Transferir Pesos</button>
+    <button onclick="cerrarSesion()">Cerrar Sesión</button>
+  </div>
+</nav>
+  <div class="transaccion-container">
+    <h3>Compra/Venta de Criptomonedas</h3>
+    <form id="transaccionForm">
+      <div class="mb-3">
+        <label for="cripto">Criptomoneda</label>
+        <select id="cripto" name="cripto" required>
+          <option value="">Selecciona una cripto</option>
+          <option value="1">Bitcoin</option>
+          <option value="2">Ethereum</option>
+          <option value="3">USDC</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="mercado">Mercado</label>
+        <select id="mercado" name="mercado" required>
+          <option value="">Selecciona un mercado</option>
+          <option value="1">Binance</option>
+          <option value="2">Buenbit</option>
+          <option value="3">LemonCash</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="operacion">Operación</label>
+        <select id="operacion" name="operacion" required>
+          <option value="compra">Compra</option>
+          <option value="venta">Venta</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="cantidad">Cantidad</label>
+    <input type="number" id="cantidad" name="cantidad" min="0.0001" max="999999999999999999.99" step="0.0001" required>    
+    </div>
+      <button type="submit">Realizar Transacción</button>
+    </form>
+    <div id="responseTransaccion" class="response-box"></div>
+  </div>
+  <script>
+      function cerrarSesion() {
+      localStorage.removeItem('usuarioId');
+      window.location.href = "indexLogin.html"; 
+    }
+  </script>
+  
+
+  <script src="scriptTransaccion.js"></script>
+</body>
+</html>

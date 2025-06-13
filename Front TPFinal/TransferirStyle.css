@@ -1,0 +1,87 @@
+/* === General Body === */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #74ebd5, #9face6);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-custom {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.10);
+    padding: 0.8rem 2rem;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #4a63e7 !important;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar-links button {
+    background: none;
+    border: none;
+    color: #4a63e7;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.navbar-links button:hover {
+    background: linear-gradient(to right, #74ebd5, #9face6);
+    color: #222;
+}
+
+.transaccion-container {
+    background: #fff;
+    padding: 2.5rem 2rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    width: 100%;
+    max-width: 420px;
+    margin: 120px auto 40px auto; 
+}
+
+
+.transaccion-container h3 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+.container-main {
+    max-width: 420px;
+    margin: 120px auto 40px auto; 
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    padding: 2rem;
+}
+
+.response-box {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    text-align: center;
+    min-height: 24px;
+}

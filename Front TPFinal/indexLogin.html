@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="LoginStyle.css" />
+</head>
+<body>
+    <div class="card">
+        <h2>Iniciar Sesión</h2>
+        <form id="loginForm">
+            <label for="gmail">Correo Electrónico</label>
+            <input type="email" id="gmail" name="gmail" required />
+
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" name="password" required />
+
+            <button type="submit">Iniciar Sesión</button>
+            <div id="response" class="response"></div>
+        </form>
+        <button id="btnRegister" type="button" style="margin-top:1rem;">Registrate</button>
+    </div>
+
+    <script src="scriptLogin.js"></script>
+
+</body>
+</html>
